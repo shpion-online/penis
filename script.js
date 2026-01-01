@@ -32,6 +32,9 @@ const characters = [
     { name: 'Вальхала', emoji: '😈' },
     { name: 'Подік', emoji: '😈' },
     { name: 'Лео бір', emoji: '😈' },
+    { name: 'Снюс', emoji: '😈' },
+    { name: 'Насвай', emoji: '😈' },
+    { name: 'Маркі', emoji: '😈' },
 
 ];
 
