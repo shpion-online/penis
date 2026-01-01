@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Гра в Шпіона</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="setup-screen" class="screen active">
+        <div class="container">
+            <h1 class="game-title">🎭 Гра в Шпіона</h1>
+            <p class="game-description">Оберіть кількість гравців (від 3 до 12)</p>
+            
+            <div class="players-selector">
+                <div class="players-grid">
+                    <button class="player-btn" data-players="3">3</button>
+                    <button class="player-btn" data-players="4">4</button>
+                    <button class="player-btn" data-players="5">5</button>
+                    <button class="player-btn" data-players="6">6</button>
+                    <button class="player-btn" data-players="7">7</button>
+                    <button class="player-btn" data-players="8">8</button>
+                    <button class="player-btn" data-players="9">9</button>
+                    <button class="player-btn" data-players="10">10</button>
+                    <button class="player-btn" data-players="11">11</button>
+                    <button class="player-btn" data-players="12">12</button>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div id="cards-screen" class="screen">
+        <div class="container">
+            <h2 class="screen-title">Карточки гравців</h2>
+            <p class="screen-subtitle">Нажми "Показати карточку", щоб побачити картку</p>
+            
+            <div class="card-display">
+                <div class="card hidden" id="player-card">
+                    <div class="card-image" id="card-image"></div>
+                    <img id="card-photo" class="card-photo" style="display: none;" alt="Персонаж">
+                    <div class="card-title" id="card-title"></div>
+                </div>
+                <div class="card-placeholder" id="card-placeholder">
+                    <p>Нажми кнопку нижче, щоб побачити свою картку</p>
+                </div>
+            </div>
+
+            <div class="player-info">
+                <p>Гравець <span id="current-player-number">1</span> з <span id="total-players">3</span></p>
+            </div>
+
+            <div class="controls">
+                <button id="show-card-btn" class="btn btn-primary">Показати карточку гравця</button>
+                <button id="hide-card-btn" class="btn btn-secondary" style="display: none;">Я побачив карточку</button>
+                <button id="next-player-btn" class="btn btn-primary" style="display: none;">Наступний гравець</button>
+                <button id="show-all-btn" class="btn btn-secondary" style="display: none;">Показати всі карточки</button>
+                <button id="restart-btn" class="btn btn-secondary">Почати заново</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="all-cards-screen" class="screen">
+        <div class="container">
+            <h2 class="screen-title">Всі карточки</h2>
+            <div class="all-cards-grid" id="all-cards-grid"></div>
+            <div class="controls">
+                <button id="back-to-single-btn" class="btn btn-primary">Повернутися до показу по черзі</button>
+                <button id="restart-all-btn" class="btn btn-secondary">Почати заново</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
